@@ -28,8 +28,7 @@ Required packages:
 
 The training function can be called by running the train.py script as shown below
 
-
-'''console
+```console
 $ python3 train.py -h
 usage: train.py [-h] [--model MODEL] [--lr LR] [--epochs N] [--no-cuda]
                 [--save-model] [--path SAVE]
@@ -45,14 +44,16 @@ optional arguments:
   --save-model   Saves current model to cpu as YYYY_MM_DD.pth if called
   --path SAVE    select filename, pth extenstion automatically added (default
                  = saved_model)
+```
 
-'''
+
+
 
 ## Prediction
 
 The prediction function can be called by running the predict.py script as shown below
 
-'''console  
+```console
 $ python3 predict.py -h
 usage: predict.py [-h] [--model MODEL] [--no-cuda] [--topk tk] [--img IMG]
                   [--label_map lablels] [--lr LR]
@@ -69,5 +70,4 @@ optional arguments:
   --label_map lablels  picks a json file to append names to flowers (default =
                        None)
   --lr LR              learning rate (default = 0.001)
-  
-  '''
+```
