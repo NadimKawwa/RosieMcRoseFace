@@ -29,7 +29,7 @@ Required packages:
 The training function can be called by running the train.py script as shown below
 
 
-'''(python)
+'''  
 $ python3 train.py -h
 usage: train.py [-h] [--model MODEL] [--lr LR] [--epochs N] [--no-cuda]
                 [--save-model] [--path SAVE]
@@ -52,7 +52,7 @@ optional arguments:
 
 The prediction function can be called by running the predict.py script as shown below
 
-'''(python)
+'''  
 $ python3 predict.py -h
 usage: predict.py [-h] [--model MODEL] [--no-cuda] [--topk tk] [--img IMG]
                   [--label_map lablels] [--lr LR]
