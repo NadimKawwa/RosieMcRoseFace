@@ -20,7 +20,7 @@ def load_model(checkpoint_path, lr=0.001):
     
     """ 
     
-    checkpoint = torch.load(checkpoint_path)
+    checkpoint = torch.load(checkpoint_path, map_location=lambda storage, loc: storage)
     model=model_select(checkpoint['arch'])
     model.load_state_dict(checkpoint['model_state_dict'])
     model.class_to_idx=checkpoint['class_to_idx']
